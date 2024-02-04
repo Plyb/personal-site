@@ -1,0 +1,35 @@
+$panel-bg-color: #0f2233;
+$border-color: #060d14;
+
+.hover-bubble-container {
+    position: relative;
+    display: inline-block;
+
+    .hover-bubble {
+        display: none;
+    }
+
+    &:hover .hover-bubble {
+        background-color: $panel-bg-color;
+        border: 2px solid $border-color;
+        border-radius: 5px;
+        padding: 5px;
+
+        display: block;
+        position: absolute;
+        z-index: 1;
+        left: 50%;
+        transform: translate(-50%);
+
+        &::after {
+            content: " ";
+            position: absolute;
+            bottom: 100%;  /* At the top of the tooltip */
+            left: 50%;
+            margin-left: -10px;
+            border-width: 10px;
+            border-style: solid;
+            border-color: transparent transparent $border-color transparent;
+        }
+    }
+}

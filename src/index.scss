@@ -1,0 +1,244 @@
+/*
+This file is super garbage, don't do it this way, I just threw it together
+*/
+
+$panel-bg-color: #0f2233;
+$major-text-color: #fdf6e3;
+$mobile-width: 750px;
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  background-color: #1f3c55;
+  color: $major-text-color;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+  display: block;
+}
+
+p code {
+  display: inline-block;
+  color: grey;
+}
+
+.content {
+  @media screen and (min-width: $mobile-width) {
+    margin: 5em;
+  }
+}
+
+header {
+  background-color: $panel-bg-color;
+
+  margin: 0 2em 2em 2em;
+  padding: 0.5em;
+  border-radius: 0 0 5px 5px;
+
+  display: flex;
+  align-items: center;
+
+  & > *, img {
+    min-width: 1.5em;
+    margin: auto;
+  }
+
+  a {
+    &:link, &:visited {
+      color: $major-text-color;
+    }
+  }
+}
+
+.about-me-section {
+
+  @media screen and (min-width: $mobile-width) {
+    display: flex;
+  }
+
+  .profile {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    min-width: 15em;
+  
+    img {
+      width: 100%;
+    }
+  }
+
+  .panel {
+    flex: 3;
+  }
+}
+
+.panel {
+  background-color: $panel-bg-color;
+  border-radius: 5px;
+
+  padding: 1em;
+  margin: 1em;
+
+  h1 {
+    margin-top: 0;
+  }
+}
+
+ul.major {
+  padding: 0;
+  border-radius: 5px;
+
+  div {
+    overflow: hidden;
+
+    h3 {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      
+      &:focus {
+        white-space: wrap;
+      }
+    }
+  }
+
+  > li {
+    border: solid 1px #3a4147;
+    padding: 1em;
+    list-style-type: none;
+
+    &:first-child {
+      border-radius: 5px 5px 0 0;
+    }
+    
+    &:last-child {
+      border-radius: 0 0 5px 5px;
+    }
+    
+    &:first-child:last-child {
+      border-radius: 5px;
+    }
+
+    & + li {
+      border-top: none;
+    }
+    
+    img {
+      height: 3em;
+      width: 3em;
+      margin: 1em;
+      border-radius: 10px;
+    }
+
+    .link-list {
+      display: flex;
+      margin-bottom: 1em;
+      padding: 0;
+
+      li {
+        list-style-type: none;
+      }
+
+      li + li {
+        margin-left: 0.5em;
+      }
+    }
+  }
+}
+
+$link-color: #c9426d;
+a, button {
+  font-weight: 700;
+  text-decoration: none;
+
+  &:link {
+    color: $link-color;
+  }
+
+  &:visited, &:active {
+    color: #7c374d;
+  }
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+button {
+  color: $link-color;
+  background-color: #0000;
+  border: none;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+div.dropdown-list {
+  ul {
+    display: none;
+  }
+
+  p {
+    margin: 0;
+    cursor: pointer;
+  }
+
+  p::after {
+    padding-left: 1em;
+    content: "▼";
+  }
+
+  &:focus {
+    ul {
+      display: block;
+    }
+
+    p {
+      cursor: auto;
+    }
+
+    p::after {
+      content: "";
+    }
+  }
+
+  li {
+    list-style: disc;
+  }
+}
+
+.panel-group {
+  display: flex;
+  flex-direction: column;
+
+  @media screen and (min-width: calc(2 * $mobile-width)) {
+    flex-direction: row;
+
+    & > * {
+      width: 50%;
+    }
+  }
+}
+
+h2 {
+  margin-top: 0;
+}
+
+h6 {
+  color: grey;
+}
+
+footer {
+  color: grey;
+
+  a:link, a:visited {
+    color: grey;
+  }
+}

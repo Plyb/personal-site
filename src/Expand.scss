@@ -1,0 +1,19 @@
+.expand-container {
+    .expand-label-container {
+        display: flex;
+        align-items: center;
+    }
+
+    .expand-arrow {
+        padding-left: 1em;
+        cursor: pointer;
+    }
+
+    .expanded::after {
+        content: "▲";
+    }
+
+    .collapsed::after {
+        content: "▼";
+    }
+}
