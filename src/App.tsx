@@ -39,7 +39,7 @@ function App() {
         </div>
       </div>
 
-      <footer>Copyright Koby Lewis 2024 <a href="to-be-filled-in">Source code</a></footer>
+      <footer>Copyright Koby Lewis 2024 <a href="https://github.com/Plyb/personal-site">Source code</a></footer>
     </div>
   );
 }
