@@ -14,7 +14,7 @@ export const Email = () => {
         setCopied(true);
     }
 
-    return <div>
+    return <div className='email'>
         <code>const address = 'kobyjlewis';</code>
         <code>const domain = 'gmail.com';</code>
         <code>console.log(`$&#123;address&#125;@$&#123;domain&#125;`);</code>
