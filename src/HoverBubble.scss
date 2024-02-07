@@ -19,6 +19,7 @@ $border-color: #060d14;
         position: absolute;
         z-index: 1;
         left: 50%;
+        top: 150%;
         transform: translate(-50%);
 
         &::after {

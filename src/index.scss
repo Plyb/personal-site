@@ -178,6 +178,8 @@ button {
   border: none;
   font-family: inherit;
   font-size: inherit;
+  cursor: pointer;
+  padding: 0;
 }
 
 div.dropdown-list {
@@ -233,6 +235,7 @@ h2 {
 
 h6 {
   color: grey;
+  margin: 0;
 }
 
 footer {

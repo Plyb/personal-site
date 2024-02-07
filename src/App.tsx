@@ -1,4 +1,5 @@
 import './App.css';
+import { Email } from './Email';
 import { hoverBubble } from './HoverBubble';
 import { ProjectList } from './ProjectList';
 import { Timeline } from './Timeline';
@@ -12,11 +13,7 @@ function App() {
         <a href='https://www.linkedin.com/in/kobylewis'><img src='/res/icons/linkedin.svg' alt="LinkedIn"/></a>
         { hoverBubble(
           <img src='/res/icons/email.svg' alt="Email"/>,
-          <div>
-            <code>const address = 'kobyjlewis';</code>
-            <code>const domain = 'gmail.com';</code>
-            <code>console.log(`$&#123;address&#125;@$&#123;domain&#125;`);</code>
-          </div>
+          <Email/>
         ) }
       </header>
 

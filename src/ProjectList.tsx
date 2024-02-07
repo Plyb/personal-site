@@ -1,3 +1,4 @@
+import { Email } from './Email'
 import { Expand } from './Expand'
 import { hoverBubble } from './HoverBubble'
 import { ListPanel } from './ListPanel'
@@ -95,7 +96,7 @@ export const projects: project[] = [
 
 export const ProjectList = () => <ListPanel
   title='Projects'
-  description={<label>If any of these are interesting to you, { hoverBubble(<a href='#header'>please reach out</a>, <div style={{ width: '10em' }}>Email is great, or any other contact info you happen to have.</div> )}! I'm always happy to collaborate.</label>}
+  description={<label>If any of these are interesting to you, { hoverBubble(<button>please reach out</button>, <Email/> )}! I'm always happy to collaborate.</label>}
   listItems={projects.map(project =>
   <div className='project'>
     <img src={`/res/icons/${project.icon}`} alt={project.title}/>
