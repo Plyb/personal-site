@@ -19,6 +19,20 @@ type link = {
 
 export const projects: project[] = [
   {
+    title: 'Development of a Mutable Meme Model in the Context of a Contagion Spread Simulation',
+    desc: 'Research paper',
+    links: [{ text: 'IEEE', url: 'https://ieeexplore.ieee.org/document/10253432' }, { text: 'PDF', url: '/res/Meme_Mutation_Paper.pdf'}],
+    todos: [],
+    icon: 'shuffle-tracks-button.png'
+  },
+  {
+    title: 'Cardboard',
+    desc: 'A Framework for quickly prototyping board and card games on the web',
+    links: [{ text: 'Source Code', url: 'https://github.com/Plyb/web-game-core' }],
+    todos: ['Rework into React or other more flexible framework'],
+    icon: 'joker.png'
+  },
+  {
     title: 'Conlang Generator',
     desc: 'An attempt to procedurally generate a realistic constructed language',
     links: [],
@@ -36,6 +50,13 @@ export const projects: project[] = [
     icon: 'petri-dish.png',
   },
   {
+    title: 'Back Pocket: A Cookbook',
+    desc: 'A cookbook to remind myself of my favorite recipes',
+    links: [],
+    todos: ['Deploy', 'Add filters'],
+    icon: 'spaghetti.png',
+  },
+  {
     title: 'Keynav',
     desc: 'A small chrome extension that is designed to allow for efficiently navigating the web without a mouse',
     links: [{ url: 'https://github.com/Plyb/KeyNav', text: 'Source Code' }],
@@ -43,25 +64,11 @@ export const projects: project[] = [
     icon: 'keyboard.png',
   },
   {
-    title: 'Development of a Mutable Meme Model in the Context of a Contagion Spread Simulation',
-    desc: 'Research paper',
-    links: [{ text: 'IEEE', url: 'https://ieeexplore.ieee.org/document/10253432' }, { text: 'PDF', url: '/res/Meme_Mutation_Paper.pdf'}],
-    todos: [],
-    icon: 'shuffle-tracks-button.png'
-  },
-  {
-    title: 'Project Origins',
-    desc: 'A Minecraft mod intended to increase difficulty and bring the feel of "Old Minecraft" into the modern day',
-    links: [{ text: 'Design Doc', url: 'https://docs.google.com/document/d/1SJRWylHZxyYYQtIiKHN05nd_5xP9jhOXfQDfGtsmoCk/edit?usp=sharing'}],
-    todos: ['Begin Programming'],
-    icon: 'game-die.png'
-  },
-  {
-    title: 'Back Pocket: A Cookbook',
-    desc: 'A cookbook to remind myself of my favorite recipes',
-    links: [],
-    todos: ['Deploy', 'Add filters'],
-    icon: 'spaghetti.png',
+    title: 'Cappy',
+    desc: 'A Discord bot for managing and interacting with the BYU Computer Science Discord server',
+    links: [{ text: 'Source Code', url: 'https://github.com/BYU-CS-Discord/CSBot' }],
+    todos: ['See https://github.com/orgs/BYU-CS-Discord/projects/1'],
+    icon: 'Cappy.png',
   },
   {
     title: 'Marble Tower Binary Adder',
@@ -71,18 +78,11 @@ export const projects: project[] = [
     icon: 'plus.png'
   },
   {
-    title: 'Cardboard',
-    desc: 'A Framework for quickly prototyping board and card games on the web',
-    links: [{ text: 'Source Code', url: 'https://github.com/Plyb/web-game-core' }],
-    todos: ['Rework into React or other more flexible framework'],
-    icon: 'joker.png'
-  },
-  {
-    title: 'Cappy',
-    desc: 'A Discord bot for managing and interacting with the BYU Computer Science Discord server',
-    links: [{ text: 'Source Code', url: 'https://github.com/BYU-CS-Discord/CSBot' }],
-    todos: ['See https://github.com/orgs/BYU-CS-Discord/projects/1'],
-    icon: 'Cappy.png',
+    title: 'Project Origins',
+    desc: 'A Minecraft mod intended to increase difficulty and bring the feel of "Old Minecraft" into the modern day',
+    links: [{ text: 'Design Doc', url: 'https://docs.google.com/document/d/1SJRWylHZxyYYQtIiKHN05nd_5xP9jhOXfQDfGtsmoCk/edit?usp=sharing'}],
+    todos: ['Begin Programming'],
+    icon: 'game-die.png'
   },
   {
     title: 'Beyond the Board',
