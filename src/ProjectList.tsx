@@ -53,8 +53,8 @@ export const projects: project[] = [
   {
     title: 'Back Pocket: A Cookbook',
     desc: 'A cookbook to remind myself of my favorite recipes',
-    links: [],
-    todos: ['Deploy', 'Add filters'],
+    links: [{ url: 'https://backpocket.kobylewis.net/', text: 'Site' }, { url: 'https://github.com/Plyb/back-pocket', text: 'Source Code '}],
+    todos: ['Update Style', 'Add filters'],
     icon: 'spaghetti.png',
   },
   {
