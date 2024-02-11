@@ -9,7 +9,7 @@ type TimelineItem = {
 const timelineItems: TimelineItem[] = [
     {
         title: 'Back Pocket Launched',
-        date: new Date(2024, 2, 10),
+        date: new Date(2024, 1, 10),
         description: <div>
             <p>I usually like to plan my meals about a week in advance so that I can buy groceries, but I sometimes have a hard time deciding what to eat. There are lots of meals that I like making and eating, but I often will just forget that they exist unless I am reminded. That is why I built Back Pocket.</p>
             <p>The core idea of Back Pocket is just a list of my personal favorite recipes that I can randomize the order of. From there, I can just read down the list, skipping any that I don't feel like, and adding the rest to my weekly meal plan. It also let me experiment with a backend-less architecture that is able to fetch and convert Markdown files into HTML. This project was started before my personal website was, hence why it still uses Vue. I've already been using Back Pocket for a few weeks, and while the style is really plain and the functionality very limited at the moment, I've actually found it super effective!</p>
