@@ -8,6 +8,13 @@ type TimelineItem = {
 
 const timelineItems: TimelineItem[] = [
     {
+        title: 'Static Analysis Lab Blog Launced',
+        date: new Date(2024, 11, 1),
+        description: <div>
+            <p>I've started graduate school recently, and along with a few other students in Dr. Kimball Germane's static analysis lab, we've started a research blog. I'll be posting there from time to time as I do research, you can find those posts at <a href="https://byu-static-analysis-lab.github.io/blog/">https://byu-static-analysis-lab.github.io/blog/</a></p>
+        </div>
+    },
+    {
         title: 'Back Pocket Launched',
         date: new Date(2024, 1, 10),
         description: <div>
