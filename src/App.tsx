@@ -20,7 +20,7 @@ function App() {
       <div className='content'>
         <div className='about-me-section'>
           <div className='profile'>
-            <img src='/res/profile.png' alt='profile'/>
+            <img src='/res/profile-50-percent.png' alt='profile'/>
           </div>
           <div className='panel'>
             <h2>Koby Lewis</h2>
